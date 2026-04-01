@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Reservations &amp; Private Parties | Liberty Collective</title>
+  <meta name="description" content="Book a private party or group reservation at Liberty Collective in Liberty Township, OH. Private rooms, outdoor decks, sand courts and golf simulator bays for events of all sizes.">
+  <link rel="canonical" href="https://www.liberty-collective.com/party/">
+  <meta property="og:title" content="Group Reservations &amp; Private Parties | Liberty Collective">
+  <meta property="og:description" content="Book a private party or group reservation at Liberty Collective. Private rooms, outdoor decks, sand courts and golf simulator bays.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.liberty-collective.com/party/">
+  <meta property="og:image" content="https://static01.sh-websites.com/uploads/sites/208/2025/12/logo.png">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Group Reservations &amp; Private Parties | Liberty Collective">
+  <meta name="twitter:description" content="Book a private party or group reservation at Liberty Collective in Liberty Township, OH.">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://static01.sh-websites.com/uploads/sites/208/2025/12/cropped-favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://static01.sh-websites.com/uploads/sites/208/2025/12/cropped-favicon-180x180.png">
+  <style>
+    @font-face { font-family: "Great Vibes"; font-style: normal; font-weight: 400; font-display: swap; src: url('https://static01.sh-websites.com/uploads/sites/208/fonts/RWmMoKWR9v4ksMfaWd_JN-XHg6UKDXlq.woff2') format('woff2'); }
+    @font-face { font-family: Anton; font-style: normal; font-weight: 400; font-display: swap; src: url('https://static01.sh-websites.com/uploads/sites/208/fonts/1Ptgg87LROyAm0Kx8i4gS7lu.woff2') format('woff2'); }
+    @font-face { font-family: Figtree; font-style: normal; font-weight: 300; font-display: swap; src: url('https://static01.sh-websites.com/uploads/sites/208/fonts/Xmz-HUzqDCFdgfMsYiV_F7wfS-Bs_chQF5bwkEU4HTy.woff2') format('woff2'); }
+    @font-face { font-family: Figtree; font-style: normal; font-weight: 400; font-display: swap; src: url('https://static01.sh-websites.com/uploads/sites/208/fonts/Xmz-HUzqDCFdgfMsYiV_F7wfS-Bs_chQF5bwkEU4HTy.woff2') format('woff2'); }
+    @font-face { font-family: Figtree; font-style: normal; font-weight: 700; font-display: swap; src: url('https://static01.sh-websites.com/uploads/sites/208/fonts/Xmz-HUzqDCFdgfMsYiV_F7wfS-Bs_chQF5bwkEU4HTy.woff2') format('woff2'); }
+  </style>
+  <link rel="stylesheet" href="https://static01.sh-websites.com/themes/spothopper/assets/lib/font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <style>
+    /* Party page — single continuous dark bg like the live SpotHopper page */
+    .party-page {
+      position: relative;
+      min-height: 100vh;
+      overflow: hidden;
+      color: #fff;
+    }
+    .party-page::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: url('https://static01.sh-websites.com/uploads/sites/208/2025/12/about_03.jpg') center/cover no-repeat;
+      filter: blur(6px);
+      transform: scale(1.05);
+      z-index: -2;
+    }
+    .party-page::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.65);
+      z-index: -1;
+    }
+
+    /* Hero heading area */
+    .party-hero {
+      text-align: center;
+      padding: 160px 20px 30px;
+    }
+    .party-hero h1 {
+      font-family: Anton, sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin: 0 0 16px;
+    }
+    .party-hero p {
+      font-family: Figtree, sans-serif;
+      font-size: clamp(0.85rem, 1.2vw, 1rem);
+      color: #fff;
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    /* Images + form layout */
+    .party-body {
+      display: flex;
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px 80px;
+      align-items: flex-start;
+    }
+
+    /* 2x2 image grid */
+    .party-images {
+      flex: 0 0 42%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .party-images img {
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+    }
+
+    /* Dark form card — dark translucent bg, matches live site */
+    .party-form-card {
+      flex: 1 1 58%;
+      background: rgba(40,40,40,0.85);
+      padding: 32px 28px;
+    }
+    .party-form-card label {
+      display: block;
+      font-family: Figtree, sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .party-form-card input[type="text"],
+    .party-form-card input[type="email"],
+    .party-form-card input[type="tel"],
+    .party-form-card input[type="date"],
+    .party-form-card input[type="time"],
+    .party-form-card select,
+    .party-form-card textarea {
+      width: 100%;
+      padding: 12px 14px;
+      font-family: Figtree, sans-serif;
+      font-size: 0.95rem;
+      color: #333;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-bottom: 18px;
+      box-sizing: border-box;
+    }
+    .party-form-card textarea { resize: vertical; min-height: 100px; }
+    .party-form-card select { appearance: auto; }
+
+    .party-form-card .consent-block {
+      color: #fff;
+      font-family: Figtree, sans-serif;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      margin-bottom: 18px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .party-form-card .consent-block input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin-top: 2px;
+      flex-shrink: 0;
+      accent-color: #fff;
+    }
+    .party-form-card .consent-block a {
+      color: #7ba4db;
+      text-decoration: underline;
+    }
+    .party-form-card .consent-block ul {
+      list-style: disc;
+      padding-left: 24px;
+      margin: 6px 0 0;
+    }
+    .party-form-card .consent-block ul li {
+      font-weight: 700;
+      font-size: 0.82rem;
+      margin-bottom: 2px;
+    }
+    .party-form-card .btn-submit {
+      display: inline-block;
+      font-family: Anton, sans-serif;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: #1a1a1a;
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 14px 40px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .party-form-card .btn-submit:hover {
+      background: #fff;
+      color: #1a1a1a;
+    }
+
+    @media (max-width: 768px) {
+      .party-body { flex-direction: column; }
+      .party-images, .party-form-card { flex: none; width: 100%; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EventVenue",
+    "name": "Liberty Collective",
+    "description": "Book group reservations and private parties at Liberty Collective, an 18,000 sq ft entertainment complex in Liberty Township, OH.",
+    "url": "https://www.liberty-collective.com/party/",
+    "address": { "@type": "PostalAddress", "streetAddress": "6735 Lakota Lane", "addressLocality": "Liberty Township", "addressRegion": "OH", "postalCode": "45044", "addressCountry": "US" },
+    "telephone": "+15135873220",
+    "maximumAttendeeCapacity": 500
+  }
+  </script>
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.liberty-collective.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Private Parties", "item": "https://www.liberty-collective.com/private-parties/" },
+    { "@type": "ListItem", "position": 3, "name": "Book a Party", "item": "https://www.liberty-collective.com/party/" }
+  ]}
+  </script>
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <ul class="nav-left"><li><a href="/food-beverage/">Food &amp; Beverage</a></li><li><a href="/events/">Events</a></li><li><a href="/sand-sports/">The Beach</a></li><li><a href="/clubs/">Clubs</a></li><li><a href="/private-parties/">Private Parties</a></li></ul>
+        <a href="/" class="nav-logo"><img src="https://static01.sh-websites.com/uploads/sites/208/2025/12/logo.png" alt="Liberty Collective" width="200" height="140"></a>
+        <ul class="nav-right">
+          <li class="has-dropdown"><a href="/about/">About <svg class="chevron" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a><ul class="dropdown"><li><a href="/about/">About Liberty Collective</a></li><li><a href="/become-a-vendor/">Become a Vendor</a></li><li><a href="/about/be-an-insider/">Be an Insider</a></li><li><a href="/news/">News</a></li></ul></li>
+          <li class="has-dropdown"><a href="#">Order Online <svg class="chevron" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a><ul class="dropdown"><li><a href="https://www.meandu.app/v2/liberty-collective-bristolsbbb/pickup" target="_blank" rel="noopener">Bristols Ordering</a></li><li><a href="https://www.meandu.app/v2/liberty-collective-leilei/pickup" target="_blank" rel="noopener">Ms. Lei Lei's Ordering</a></li><li><a href="https://www.meandu.app/v2/liberty-collective-ramundos/pickup" target="_blank" rel="noopener">Ramundos Ordering</a></li><li><a href="https://www.meandu.app/v2/liberty-collective-ricelife/pickup" target="_blank" rel="noopener">Rice Life Ordering</a></li><li><a href="https://www.meandu.app/v2/liberty-collective-rmhm/pickup" target="_blank" rel="noopener">Roberto and Miguels Ordering</a></li><li><a href="https://order.toasttab.com/online/liberty-collective-6735-lakota-lane" target="_blank" rel="noopener">Caladesi Coffee Ordering</a></li></ul></li>
+          <li><a href="https://order.toasttab.com/egiftcards/liberty-collective-6735-lakota-lane" target="_blank" rel="noopener">Gift Cards</a></li><li><a href="/leagues/">Leagues</a></li><li><a href="/golf-simulator/">Golf Simulator</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu"><ul>
+      <li><a href="/food-beverage/">Food &amp; Beverage</a></li><li><a href="/events/">Events</a></li><li><a href="/sand-sports/">The Beach</a></li><li><a href="/clubs/">Clubs</a></li><li><a href="/private-parties/">Private Parties</a></li>
+      <li class="mobile-dropdown"><a href="#" class="mobile-dropdown-toggle">About</a><ul class="mobile-sub"><li><a href="/about/">About Us</a></li><li><a href="/become-a-vendor/">Become a Vendor</a></li><li><a href="/about/be-an-insider/">Be an Insider</a></li><li><a href="/news/">News</a></li></ul></li>
+      <li class="mobile-dropdown"><a href="#" class="mobile-dropdown-toggle">Order Online</a><ul class="mobile-sub"><li><a href="https://www.meandu.app/v2/liberty-collective-bristolsbbb/pickup" target="_blank" rel="noopener">Bristols Ordering</a></li><li><a href="https://www.meandu.app/v2/liberty-collective-leilei/pickup" target="_blank" rel="noopener">Ms. Lei Lei's Ordering</a></li><li><a href="https://www.meandu.app/v2/liberty-collective-ramundos/pickup" target="_blank" rel="noopener">Ramundos Ordering</a></li><li><a href="https://www.meandu.app/v2/liberty-collective-ricelife/pickup" target="_blank" rel="noopener">Rice Life Ordering</a></li><li><a href="https://www.meandu.app/v2/liberty-collective-rmhm/pickup" target="_blank" rel="noopener">Roberto and Miguels Ordering</a></li><li><a href="https://order.toasttab.com/online/liberty-collective-6735-lakota-lane" target="_blank" rel="noopener">Caladesi Coffee Ordering</a></li></ul></li>
+      <li><a href="https://order.toasttab.com/egiftcards/liberty-collective-6735-lakota-lane" target="_blank" rel="noopener">Gift Cards</a></li><li><a href="/leagues/">Leagues</a></li><li><a href="/golf-simulator/">Golf Simulator</a></li>
+    </ul></div>
+  </header>
+
+  <main class="party-page">
+    <!-- Hero heading -->
+    <div class="party-hero">
+      <h1>Group Reservations and Private Parties</h1>
+      <p>Whether it's a bday party, baby shower, office function or any other special event, please fill out the form below and we'll do our best to accommodate your desired date and any requests you may have to make your party/celebration memorable.</p>
+    </div>
+
+    <!-- Images + Form -->
+    <div class="party-body">
+
+        <!-- 2x2 venue image grid -->
+        <div class="party-images">
+          <img src="https://static01.sh-websites.com/uploads/sites/208/2026/01/the_deck.png" alt="The Deck outdoor seating at Liberty Collective" width="400" height="300">
+          <img src="https://static01.sh-websites.com/uploads/sites/208/2026/01/the_lookout.png" alt="The Lookout at Liberty Collective" width="400" height="300">
+          <img src="https://static01.sh-websites.com/uploads/sites/208/2026/01/collective_green.png" alt="Collective Green outdoor area at Liberty Collective" width="400" height="300">
+          <img src="https://static01.sh-websites.com/uploads/sites/208/2026/01/mezzanine-bar.png" alt="Mezzanine Bar at Liberty Collective" width="400" height="300">
+        </div>
+
+        <!-- Booking form -->
+        <div class="party-form-card">
+          <form id="party-form" action="https://formspree.io/f/placeholder" method="POST">
+
+            <label for="pf-name">Full Name (required):</label>
+            <input type="text" id="pf-name" name="name" placeholder="e.g. Nina Simone" required autocomplete="name">
+
+            <label for="pf-phone">Phone (required):</label>
+            <input type="tel" id="pf-phone" name="phone" placeholder="e.g. (123) 456-7890" required autocomplete="tel">
+
+            <div class="consent-block">
+              <input type="checkbox" id="pf-sms" name="sms_consent" value="yes">
+              <div>
+                <strong>I agree to receive marketing text messages from Liberty Collective about specials, events, and other exclusive offers.</strong><br>
+                My consent to receive these messages is not required to make a reservation or use the services provided.<br>
+                <a href="#">Privacy Policy</a> <a href="#">Terms and Conditions</a>
+                <ul>
+                  <li>Message and data rates may apply.</li>
+                  <li>Message frequency varies.</li>
+                  <li>Reply STOP to cancel, HELP for help.</li>
+                </ul>
+              </div>
+            </div>
+
+            <label for="pf-email">Email (required):</label>
+            <input type="email" id="pf-email" name="email" placeholder="e.g. cris@example.com" required autocomplete="email">
+
+            <label for="pf-company">Company (optional):</label>
+            <input type="text" id="pf-company" name="company" placeholder="Name of your business...">
+
+            <label for="pf-people">Number of People (required):</label>
+            <select id="pf-people" name="people" required>
+              <option value="">Select</option>
+              <option value="1">1 Person</option>
+              <option value="2">2 People</option>
+              <option value="3" selected>3 People</option>
+              <option value="4">4 People</option>
+              <option value="5">5 People</option>
+              <option value="6">6 People</option>
+              <option value="7">7 People</option>
+              <option value="8">8 People</option>
+              <option value="9">9 People</option>
+              <option value="10">10 People</option>
+              <option value="15">15 People</option>
+              <option value="20">20 People</option>
+              <option value="25">25 People</option>
+              <option value="30">30 People</option>
+              <option value="40">40 People</option>
+              <option value="50">50+ People</option>
+              <option value="75">75+ People</option>
+              <option value="100">100+ People</option>
+              <option value="150">150+ People</option>
+              <option value="200">200+ People</option>
+            </select>
+
+            <label for="pf-date">Select Date (required):</label>
+            <input type="date" id="pf-date" name="date" required>
+
+            <label for="pf-time">Select Time (required):</label>
+            <input type="time" id="pf-time" name="time" required>
+
+            <label for="pf-details">Additional Details (optional):</label>
+            <textarea id="pf-details" name="details" placeholder="Tell us about your event — type of celebration, special requests, dietary needs, etc."></textarea>
+
+            <button type="submit" class="btn-submit">Submit Inquiry</button>
+          </form>
+        </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer"><p class="footer-copyright">&copy; 2026 Liberty Collective. All Rights Reserved. Powered By <strong>Chowdown</strong>.</p></footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
