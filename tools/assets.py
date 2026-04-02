@@ -29,12 +29,84 @@ def slugify(text):
     text = text.lower().strip()
     text = re.sub(r'[^\w\s-]', '', text)
     text = re.sub(r'[-\s]+', '-', text)
-    return text[:60]
+    return text[:80]
+
+
+def make_filename(url):
+    """
+    Generate a unique, descriptive filename from a CDN URL.
+    Handles three patterns:
+
+    1. static01.sh-websites.com — filename is already meaningful
+       e.g. /uploads/sites/222/2025/03/drinks-scaled-1-1024x683.jpg
+       → drinks-scaled-1-1024x683
+
+    2. static.spotapps.co/spots/ — filename is generic (full, original, w926)
+       e.g. /spots/51/e4dd0f17744e278f.../full
+       → spotapps-e4dd0f17-full
+
+    3. Cloudinary (res.cloudinary.com) — nested URL with hash
+       e.g. .../spots/d0/0874ed46d044e88f.../:original
+       → cloudinary-0874ed46-original
+    """
+    parsed = urlparse(url)
+    path = parsed.path
+
+    # Pattern 2: SpotApps spots URLs
+    if 'spotapps.co' in url:
+        # Path like /spots/51/e4dd0f17744e278fdcfce790c2d95a/full
+        # or nested inside a Cloudinary URL
+        spots_match = re.search(r'/spots/([a-f0-9]{2})/([a-f0-9]+)/([^/]+)$', url)
+        if spots_match:
+            hash_prefix = spots_match.group(1)
+            hash_body = spots_match.group(2)[:8]
+            filename = spots_match.group(3).strip(':')  # remove leading : from :original
+            return f'spotapps-{hash_prefix}{hash_body}-{slugify(filename)}'
+
+    # Pattern 3: Cloudinary URLs
+    if 'cloudinary.com' in parsed.netloc:
+        # These wrap SpotApps URLs — extract the inner spots hash
+        spots_match = re.search(r'/spots/([a-f0-9]{2})/([a-f0-9]+)/([^/]+)$', url)
+        if spots_match:
+            hash_prefix = spots_match.group(1)
+            hash_body = spots_match.group(2)[:8]
+            filename = spots_match.group(3).strip(':')
+            return f'cloudinary-{hash_prefix}{hash_body}-{slugify(filename)}'
+        # Fallback for non-spots Cloudinary
+        return f'cloudinary-{hashlib.md5(url.encode()).hexdigest()[:10]}'
+
+    # Pattern 1: sh-websites.com — filename is meaningful
+    # Include site ID to avoid collisions between sites/208 and sites/222
+    if 'sh-websites.com' in url:
+        site_match = re.search(r'/sites/(\d+)/', path)
+        site_id = site_match.group(1) if site_match else ''
+        path_parts = path.split('/')
+        if path_parts:
+            filename = os.path.splitext(path_parts[-1])[0]
+            slug = slugify(filename) or hashlib.md5(url.encode()).hexdigest()[:10]
+            if site_id:
+                return f's{site_id}-{slug}'
+            return slug
+
+    # Fallback: use path filename + hash for uniqueness
+    path_parts = path.split('/')
+    filename = os.path.splitext(path_parts[-1])[0] if path_parts else ''
+    filename = slugify(filename)
+    if not filename or filename in ('full', 'original', 'w926', 'index'):
+        filename = hashlib.md5(url.encode()).hexdigest()[:10]
+    return filename
 
 
 def get_extension(url):
     """Get file extension from URL."""
-    path = urlparse(url).path
+    # Strip query strings and fragments
+    clean_url = url.split('?')[0].split('#')[0]
+    # For Cloudinary URLs, check the inner URL
+    if 'cloudinary.com' in url:
+        inner_match = re.search(r'https?://static\.spotapps\.co[^\s"\']+', url)
+        if inner_match:
+            clean_url = inner_match.group(0)
+    path = urlparse(clean_url).path
     ext = os.path.splitext(path)[1].lower()
     if ext in ('.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg'):
         return ext
@@ -42,7 +114,10 @@ def get_extension(url):
         return ext
     if ext in ('.woff', '.woff2', '.ttf', '.otf'):
         return ext
-    return '.jpg'  # default for CDN URLs without extension
+    # SpotApps URLs with /full, /original, /w926 have no extension — they're JPEGs
+    if any(p in url for p in ['spotapps.co', 'cloudinary.com']):
+        return '.jpg'
+    return '.jpg'
 
 
 def short_hash(url):
@@ -176,17 +251,7 @@ def run(brief_path):
 
     for url, data in sorted(cdn_images.items()):
         ext = get_extension(url)
-        url_hash = short_hash(url)
-
-        # Generate descriptive filename
-        path_parts = urlparse(url).path.split('/')
-        filename_base = os.path.splitext(path_parts[-1])[0] if path_parts else url_hash
-        filename_base = slugify(filename_base) or url_hash
-
-        # Deduplicate: skip size variants of same image (keep largest)
-        # e.g. image-300x200.jpg, image-768x512.jpg, image-1024x683.jpg, image.jpg
-        # We want the base image, not all variants
-        base_name = re.sub(r'-\d+x\d+$', '', filename_base)
+        filename_base = make_filename(url)
 
         raw_path = os.path.join(images_dir, f'{filename_base}{ext}')
         webp_path = os.path.join(images_dir, f'{filename_base}.webp')
