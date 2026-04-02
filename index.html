@@ -210,10 +210,10 @@
 
   <!-- ========== HERO VIDEO ========== -->
   <section class="hero">
-    <video class="hero-video" autoplay muted loop playsinline poster="/assets/images/home/652278_video_desktop_v3.webp" preload="none">
-      <source data-src="https://static.spotapps.co/new_website_videos/652278_videos/652278_video_desktop_v3.mp4" type="video/mp4">
+    <video class="hero-video" autoplay muted loop playsinline poster="/assets/images/home/652278_video_desktop_v3.webp">
+      <source src="/assets/hero-video.mp4" type="video/mp4">
+      <track kind="captions" src="" default />
     </video>
-    <script>document.addEventListener('DOMContentLoaded',function(){var v=document.querySelector('.hero-video');var s=v.querySelector('source');if(s.dataset.src){s.src=s.dataset.src;v.load()}});</script>
     <div class="video-controls">
       <button type="button" class="video-controls-btn" id="btn-playpause" aria-label="The decorative video is currently playing, pause the video">
         <i class="fa fa-play ico-play" aria-hidden="true" style="display:none;"></i>
