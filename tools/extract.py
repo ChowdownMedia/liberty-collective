@@ -333,8 +333,12 @@ def run(page_tree_path):
         print(f'  ERROR on homepage: {e}')
         site_emails = site_phones = site_social = site_address = site_hours = None
 
+    # Derive site name from homepage title
+    title_tag = soup.find('title')
+    site_name = title_tag.get_text(strip=True).split('–')[0].split('|')[0].strip() if title_tag else domain
+
     site_data = {
-        'name': 'Westfield Collective',
+        'name': site_name,
         'domain': domain,
         'address': site_address,
         'emails': site_emails if site_emails else None,
@@ -363,14 +367,57 @@ def run(page_tree_path):
         if page_content.get('thin_content_flag'):
             thin_pages.append(path)
 
+    # ── URL Normalization Pass ──
+    # All vendor/concept pages must live under /food-beverage/[slug]/
+    # SpotHopper sites use inconsistent paths: /vendor/, /food_and_beverage/, /food-beverage/
+    # Normalize all internal references to /food-beverage/[slug]/ before output
+    print(f'\n[Phase 3] URL normalization pass...')
+    url_rewrites = {
+        # /vendor/[slug]/ → /food-beverage/[slug]/
+        # /food_and_beverage/[slug]/ → /food-beverage/[slug]/
+    }
+    normalized_pages = {}
+    rewrite_count = 0
+    for path, data in pages_data.items():
+        new_path = path
+        if path.startswith('/vendor/'):
+            new_path = path.replace('/vendor/', '/food-beverage/', 1)
+        elif path.startswith('/food_and_beverage/'):
+            new_path = path.replace('/food_and_beverage/', '/food-beverage/', 1)
+        if new_path != path:
+            url_rewrites[path] = new_path
+            rewrite_count += 1
+            print(f'  {path} → {new_path}')
+        normalized_pages[new_path] = data
+
+    pages_data = normalized_pages
+
+    # Also normalize redirect targets
+    normalized_redirects = []
+    for p in excluded:
+        redirect_from = p['url']
+        redirect_to = p.get('redirect_to', '/')
+        if redirect_from.startswith('/vendor/'):
+            redirect_from = redirect_from.replace('/vendor/', '/food-beverage/', 1)
+        if redirect_from.startswith('/food_and_beverage/'):
+            redirect_from = redirect_from.replace('/food_and_beverage/', '/food-beverage/', 1)
+        if redirect_to.startswith('/vendor/'):
+            redirect_to = redirect_to.replace('/vendor/', '/food-beverage/', 1)
+        if redirect_to.startswith('/food_and_beverage/'):
+            redirect_to = redirect_to.replace('/food_and_beverage/', '/food-beverage/', 1)
+        normalized_redirects.append({'from': redirect_from, 'to': redirect_to})
+
+    if rewrite_count:
+        print(f'  Normalized {rewrite_count} URL paths')
+    else:
+        print(f'  No normalization needed')
+
     # Build output
     output = {
         'site': site_data,
         'pages': pages_data,
-        'redirects': [
-            {'from': p['url'], 'to': p.get('redirect_to', '/')}
-            for p in excluded
-        ],
+        'url_rewrites': url_rewrites if url_rewrites else None,
+        'redirects': normalized_redirects,
         'extraction_summary': {
             'total_extracted': len(pages_data),
             'thin_content_flags': thin_pages,
