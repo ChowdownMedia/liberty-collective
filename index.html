@@ -81,10 +81,15 @@
     .nav-left a,.nav-right a{font-family:Anton,sans-serif;text-transform:uppercase;color:#fff;text-decoration:none;font-size:clamp(.875rem,.875rem + ((1vw - .2rem)*.542),1.2rem)}
     .hero{position:relative;width:100%;height:85vh;min-height:500px;overflow:hidden}
     .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .section-welcome{position:relative;padding:60px 0;overflow:hidden}
+    .section-welcome{position:relative;padding:5% 0 0;background-size:cover;background-position:center bottom;overflow:hidden}
     .section-welcome-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
     .section-welcome .container{position:relative;z-index:1}
     .container{width:90%;max-width:1280px;margin:0 auto}
+    .welcome-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .welcome-title{font-family:Anton,sans-serif;font-size:clamp(2.2rem,2.2rem + ((1vw - .2rem)*3),4rem);text-transform:uppercase;color:#000;font-weight:400}
+    .welcome-text p{font-family:Figtree,sans-serif;font-size:clamp(.875rem,.875rem + ((1vw - .2rem)*.375),1.1rem);line-height:1.6;color:#333;padding-bottom:10px}
+    .welcome-image{overflow:hidden}
+    .welcome-image img{width:100%;min-height:500px;object-fit:cover}
   </style>
 
   <!-- Defer full styles -->
