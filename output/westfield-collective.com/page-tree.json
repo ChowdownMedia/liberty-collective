@@ -93,7 +93,8 @@
       "source": [
         "sitemap"
       ],
-      "human_review": "include"
+      "human_review": "exclude",
+      "redirect_to": "/private-parties/"
     },
     {
       "url": "/clubs/",
@@ -222,7 +223,8 @@
         "sitemap",
         "crawl"
       ],
-      "human_review": "include"
+      "human_review": "exclude",
+      "redirect_to": "/"
     },
     {
       "url": "/party/",
@@ -233,7 +235,8 @@
       "source": [
         "sitemap"
       ],
-      "human_review": "include"
+      "human_review": "exclude",
+      "redirect_to": "/private-parties/"
     },
     {
       "url": "/private-parties/",
@@ -937,12 +940,16 @@
   ],
   "human_review_summary": {
     "total_discovered": 30,
-    "included": 24,
-    "excluded": 6,
+    "included": 21,
+    "excluded": 9,
     "excluded_pages": [
       {
         "url": "/about/igloo-rentals/",
         "redirect_to": "/about/"
+      },
+      {
+        "url": "/catering/",
+        "redirect_to": "/private-parties/"
       },
       {
         "url": "/drinks/",
@@ -957,6 +964,14 @@
         "redirect_to": "/food-beverage/"
       },
       {
+        "url": "/news/",
+        "redirect_to": "/"
+      },
+      {
+        "url": "/party/",
+        "redirect_to": "/private-parties/"
+      },
+      {
         "url": "/reserve/",
         "redirect_to": "/private-parties/"
       },
@@ -965,6 +980,6 @@
         "redirect_to": "/"
       }
     ],
-    "final_build_count": 24
+    "final_build_count": 21
   }
 }
