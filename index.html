@@ -29,7 +29,7 @@
       font-style: normal;
       font-weight: 400;
       font-display: swap;
-      src: url('/assets/fonts/RWmMoKWR9v4ksMfaWd_JN-XHg6UKDXlq.woff2') format('woff2');
+      src: url('/assets/fonts/great-vibes-subset.woff2') format('woff2');
     }
     @font-face {
       font-family: Anton;
@@ -66,10 +66,31 @@
   <!-- Preload fonts -->
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/1Ptgg87LROyAm0Kx8i4gS7lu.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Xmz-HUzqDCFdgfMsYiV_F7wfS-Bs_chQF5bwkEU4HTy.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/great-vibes-subset.woff2" crossorigin>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="/assets/css/styles.min.css">
-  <link rel="stylesheet" href="/assets/css/icons.css">
+  <!-- Critical inline CSS for above-fold -->
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Figtree,sans-serif;color:#333;background:#f5f5f5;overflow-x:hidden}
+    .site-header{position:fixed;top:0;left:0;width:100%;z-index:1000;transition:background .3s,box-shadow .3s}
+    .site-header.scrolled{background:rgba(0,0,0,.95);box-shadow:0 2px 10px rgba(0,0,0,.3)}
+    .navbar{width:100%;padding:10px 0}
+    .nav-container{display:flex;align-items:center;justify-content:center;width:90%;max-width:1280px;margin:0 auto;position:relative}
+    .nav-logo img{height:100px;width:auto;transition:height .3s}
+    .site-header.scrolled .nav-logo img{height:60px}
+    .nav-left,.nav-right{display:flex;list-style:none;gap:20px;align-items:center}
+    .nav-left a,.nav-right a{font-family:Anton,sans-serif;text-transform:uppercase;color:#fff;text-decoration:none;font-size:clamp(.875rem,.875rem + ((1vw - .2rem)*.542),1.2rem)}
+    .hero{position:relative;width:100%;height:85vh;min-height:500px;overflow:hidden}
+    .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .section-welcome{position:relative;padding:60px 0;background-size:cover;background-position:center;background-repeat:no-repeat}
+    .container{width:90%;max-width:1280px;margin:0 auto}
+  </style>
+
+  <!-- Defer full styles -->
+  <link rel="stylesheet" href="/assets/css/styles.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/assets/css/styles.min.css"></noscript>
+  <link rel="stylesheet" href="/assets/css/icons.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/assets/css/icons.css"></noscript>
 
   <!-- Leaflet CSS for map (non-blocking) -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" media="print" onload="this.media='all'">
