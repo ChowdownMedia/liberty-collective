@@ -83,7 +83,7 @@ curl -sL 'https://www.TARGET.com/' | grep -oE 'https://static[^"'\'']+\.(jpg|png
 - `<meta property="og:description">` matches meta description
 - `<meta property="og:type" content="website">`
 - `<meta property="og:url">` matches canonical
-- `<meta property="og:image">` logo or relevant image
+- `<meta property="og:image">` MUST be a 1200x630 venue photo (JPG for compatibility), NOT the logo. Full absolute URL required.
 - `<meta property="og:locale" content="en_US">`
 - `<meta name="twitter:card" content="summary_large_image">`
 - At least 1 JSON-LD structured data block (type depends on page)
