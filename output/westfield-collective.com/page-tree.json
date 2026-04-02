@@ -33,7 +33,8 @@
       "source": [
         "sitemap",
         "crawl"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/about/",
@@ -44,7 +45,8 @@
       "source": [
         "sitemap",
         "crawl"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/about/be-an-insider/",
@@ -55,7 +57,8 @@
       "source": [
         "sitemap",
         "crawl"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/about/igloo-rentals/",
@@ -65,7 +68,9 @@
       "description": "",
       "source": [
         "sitemap"
-      ]
+      ],
+      "human_review": "exclude",
+      "redirect_to": "/about/"
     },
     {
       "url": "/become-a-vendor/",
@@ -76,7 +81,8 @@
       "source": [
         "sitemap",
         "crawl"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/catering/",
@@ -86,7 +92,8 @@
       "description": "",
       "source": [
         "sitemap"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/clubs/",
@@ -97,7 +104,8 @@
       "source": [
         "sitemap",
         "crawl"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/drinks/",
@@ -107,7 +115,9 @@
       "description": "",
       "source": [
         "sitemap"
-      ]
+      ],
+      "human_review": "exclude",
+      "redirect_to": "/food-beverage/"
     },
     {
       "url": "/events/",
@@ -118,7 +128,8 @@
       "source": [
         "sitemap",
         "crawl"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/food-beverage/",
@@ -129,7 +140,8 @@
       "source": [
         "sitemap",
         "crawl"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/food_and_beverage/bourbon-tequila-bar/",
@@ -139,7 +151,8 @@
       "description": "",
       "source": [
         "discovered"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/food_and_beverage/fork-fire-bowls/",
@@ -149,7 +162,8 @@
       "description": "",
       "source": [
         "discovered"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/food_and_beverage/zaria-pizzeria/",
@@ -159,7 +173,8 @@
       "description": "",
       "source": [
         "discovered"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/gift-cards/",
@@ -169,7 +184,9 @@
       "description": "",
       "source": [
         "sitemap"
-      ]
+      ],
+      "human_review": "exclude",
+      "redirect_to": "https://order.toasttab.com/egiftcards/westfield-collective-indianapolis-750-e-181st-st-ste-6"
     },
     {
       "url": "/golf-simulator/",
@@ -180,7 +197,8 @@
       "source": [
         "sitemap",
         "crawl"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/menu/",
@@ -190,7 +208,9 @@
       "description": "",
       "source": [
         "sitemap"
-      ]
+      ],
+      "human_review": "exclude",
+      "redirect_to": "/food-beverage/"
     },
     {
       "url": "/news/",
@@ -201,7 +221,8 @@
       "source": [
         "sitemap",
         "crawl"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/party/",
@@ -211,7 +232,8 @@
       "description": "",
       "source": [
         "sitemap"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/private-parties/",
@@ -222,7 +244,8 @@
       "source": [
         "sitemap",
         "crawl"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/reserve/",
@@ -232,7 +255,9 @@
       "description": "",
       "source": [
         "sitemap"
-      ]
+      ],
+      "human_review": "exclude",
+      "redirect_to": "/private-parties/"
     },
     {
       "url": "/sand-sports/",
@@ -243,7 +268,8 @@
       "source": [
         "sitemap",
         "crawl"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/specials/",
@@ -253,7 +279,9 @@
       "description": "",
       "source": [
         "sitemap"
-      ]
+      ],
+      "human_review": "exclude",
+      "redirect_to": "/"
     },
     {
       "url": "/vendor/bristols/",
@@ -263,7 +291,8 @@
       "description": "",
       "source": [
         "discovered"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/vendor/collective-pour/",
@@ -273,7 +302,8 @@
       "description": "",
       "source": [
         "discovered"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/vendor/main-bar/",
@@ -283,7 +313,8 @@
       "description": "",
       "source": [
         "discovered"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/vendor/mezzanine-bar/",
@@ -293,7 +324,8 @@
       "description": "",
       "source": [
         "discovered"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/vendor/ms-lei-leis/",
@@ -303,7 +335,8 @@
       "description": "",
       "source": [
         "discovered"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/vendor/roberto-and-miguels/",
@@ -313,7 +346,8 @@
       "description": "",
       "source": [
         "discovered"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/vendor/the-district/",
@@ -323,7 +357,8 @@
       "description": "",
       "source": [
         "discovered"
-      ]
+      ],
+      "human_review": "include"
     },
     {
       "url": "/volleyball-leagues/",
@@ -333,7 +368,9 @@
       "description": "",
       "source": [
         "sitemap"
-      ]
+      ],
+      "human_review": "include",
+      "note": "Content is from last year \u2014 build structure only, flag for client update"
     }
   ],
   "assets": {
@@ -897,5 +934,37 @@
       "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/volleyball-leagues/",
       "text": "Order"
     }
-  ]
+  ],
+  "human_review_summary": {
+    "total_discovered": 30,
+    "included": 24,
+    "excluded": 6,
+    "excluded_pages": [
+      {
+        "url": "/about/igloo-rentals/",
+        "redirect_to": "/about/"
+      },
+      {
+        "url": "/drinks/",
+        "redirect_to": "/food-beverage/"
+      },
+      {
+        "url": "/gift-cards/",
+        "redirect_to": "https://order.toasttab.com/egiftcards/westfield-collective-indianapolis-750-e-181st-st-ste-6"
+      },
+      {
+        "url": "/menu/",
+        "redirect_to": "/food-beverage/"
+      },
+      {
+        "url": "/reserve/",
+        "redirect_to": "/private-parties/"
+      },
+      {
+        "url": "/specials/",
+        "redirect_to": "/"
+      }
+    ],
+    "final_build_count": 24
+  }
 }
