@@ -144,22 +144,73 @@ Target: 100 Lighthouse accessibility. Non-negotiable checklist:
 - Document GA4 and GSC property IDs in repo CLAUDE.md
 
 ### Step 13: GHL Integration
-Forms must POST to GHL, not just sit as HTML. Before launch:
-- [ ] GHL location stood up with data structured for API consumption
-- [ ] Hours entered in GHL and confirmed returning via API
-- [ ] Newsletter form wired to GHL (embed or API POST)
-- [ ] Contact form wired to GHL
-- [ ] Birthday/VIP capture wired to GHL
-- [ ] Confirm form submissions hitting GHL CRM before launch
-- [ ] Document GHL `locationId` and form IDs in CLAUDE.md
+**STATUS: NOT YET BUILT — GHL account not set up for this client. Will be wired up when GHL location is ready.**
 
-**GHL is the data layer. The site is the display layer. Hours and events should come from GHL via Cloudflare Worker, not be hardcoded in HTML.**
+GHL is the single source of truth for dynamic content. The site is the display layer. Nothing dynamic should be hardcoded in HTML long-term.
+
+#### What GHL Controls (once wired)
+| Data | Source | Update Flow |
+|------|--------|-------------|
+| Business hours (all day parts) | GHL Location Settings | Client/team updates GHL → Worker fetches → site renders current hours automatically |
+| Events calendar | GHL Calendar/Events | Same — updates in GHL appear on site within 15 minutes |
+| Specials/promotions | GHL Custom Fields | Same pattern |
+| Form submissions (contact, newsletter, birthday) | GHL CRM | Forms POST to GHL via Cloudflare Worker — leads land in CRM |
+| Reviews | Google Places API | Separate from GHL — fetched directly via Worker |
+
+#### What Stays Static in HTML (does not need GHL sync)
+| Data | Reason |
+|------|--------|
+| Address, phone | Rarely changes — manual update if needed |
+| Navigation / page structure | Site architecture |
+| Brand assets / images | Managed through asset pipeline |
+| SEO meta tags / schema | Set at build time, updated manually |
+
+#### The Cloudflare Worker Pattern (to be built)
+```
+Client updates hours/events in GHL
+  → Cloudflare Worker fetches GHL API (by locationId)
+  → Worker caches response (15 min TTL)
+  → Site JS fetches from Worker endpoint on page load
+  → DOM updated with current hours/events
+  → openingHoursSpecification schema generated from same data
+  → Google always sees schema that matches displayed content
+```
+
+One Worker handles ALL clients — pass `locationId` as a parameter. API keys live in Cloudflare Worker environment variables — never in the repo, never in the browser.
+
+#### GHL Wiring Checklist (block launch until complete)
+- [ ] GHL location created with data structured for API consumption
+- [ ] Hours entered in GHL location settings using standard day/time format
+- [ ] Events created with title, date, time, description, image
+- [ ] GHL API confirmed returning hours and events correctly
+- [ ] Cloudflare Worker deployed and tested for this client's locationId
+- [ ] Newsletter form wired to GHL (API POST via Worker, not embed)
+- [ ] Contact form wired to GHL (API POST via Worker, not embed)
+- [ ] Birthday/VIP capture wired to GHL (API POST via Worker, not embed)
+- [ ] Form submissions confirmed hitting GHL CRM before launch
+- [ ] Document GHL `locationId` and form IDs in this CLAUDE.md and Proton Pass
+- [ ] Hours on site confirmed matching GHL after Worker is live
+- [ ] Schema `openingHoursSpecification` generating from GHL data, not hardcoded
+
+#### Current State (Liberty Collective)
+- Hours: **HARDCODED in HTML** — will be replaced by Worker when GHL is ready
+- Events: **HARDCODED in HTML** — will be replaced by Worker when GHL is ready
+- Forms: **HTML only** — submissions don't go anywhere yet, will POST to GHL via Worker
+- Reviews: **HARDCODED in HTML** — will be replaced by Google Places API via Worker
+- GHL Location ID: **TBD — account not yet created**
+
+**When GHL account is ready, come back here and wire everything up. Do not launch to production with hardcoded hours if GHL is available.**
 
 ### Step 14: Reviews
-- Google Places API call configured (agency API key)
-- Filter: 4+ stars only
-- Display: 3-5 rotating reviews
-- Falls back gracefully if API unavailable
+**STATUS: NOT YET BUILT — waiting on Google Place ID and API key setup.**
+
+Will be powered by a Cloudflare Worker that:
+- Calls Google Places API with the client's Place ID
+- Filters to 4+ star reviews only
+- Returns 3-5 rotating reviews as JSON
+- Site JS renders them into the review carousel
+- Falls back gracefully to static reviews if API is unavailable
+- API key lives in Worker environment variable — never exposed to browser
 
 ## Intake Brief (must be completed before building)
 ```
