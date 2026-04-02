@@ -1,0 +1,901 @@
+{
+  "root": "https://www.westfield-collective.com",
+  "domain": "www.westfield-collective.com",
+  "platform": "wordpress/spothopper",
+  "sitemap_source": "wp-sitemap.xml",
+  "discovery": {
+    "sitemap_pages": 20,
+    "crawl_pages": 11,
+    "in_both": 11,
+    "sitemap_only": [
+      "/about/igloo-rentals/",
+      "/catering/",
+      "/drinks/",
+      "/gift-cards/",
+      "/menu/",
+      "/party/",
+      "/reserve/",
+      "/specials/",
+      "/volleyball-leagues/"
+    ],
+    "crawl_only": [],
+    "total_merged": 20,
+    "total_with_discovered": 30
+  },
+  "total_pages": 30,
+  "pages": [
+    {
+      "url": "/",
+      "type": "home",
+      "status": 200,
+      "title": "Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap",
+        "crawl"
+      ]
+    },
+    {
+      "url": "/about/",
+      "type": "about",
+      "status": 200,
+      "title": "About Westfield Collective \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap",
+        "crawl"
+      ]
+    },
+    {
+      "url": "/about/be-an-insider/",
+      "type": "be-an-insider",
+      "status": 200,
+      "title": "Be an insider \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap",
+        "crawl"
+      ]
+    },
+    {
+      "url": "/about/igloo-rentals/",
+      "type": "igloo-rentals",
+      "status": 200,
+      "title": "Igloo rentals \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap"
+      ]
+    },
+    {
+      "url": "/become-a-vendor/",
+      "type": "become-a-vendor",
+      "status": 200,
+      "title": "Become a vendor \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap",
+        "crawl"
+      ]
+    },
+    {
+      "url": "/catering/",
+      "type": "catering",
+      "status": 200,
+      "title": "Catering \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap"
+      ]
+    },
+    {
+      "url": "/clubs/",
+      "type": "clubs",
+      "status": 200,
+      "title": "Clubs \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap",
+        "crawl"
+      ]
+    },
+    {
+      "url": "/drinks/",
+      "type": "drinks",
+      "status": 200,
+      "title": "Our Drinks \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap"
+      ]
+    },
+    {
+      "url": "/events/",
+      "type": "events",
+      "status": 200,
+      "title": "Events \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap",
+        "crawl"
+      ]
+    },
+    {
+      "url": "/food-beverage/",
+      "type": "food-beverage",
+      "status": 200,
+      "title": "Food & beverage \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap",
+        "crawl"
+      ]
+    },
+    {
+      "url": "/food_and_beverage/bourbon-tequila-bar/",
+      "type": "vendor",
+      "status": 200,
+      "title": "Bourbon & Tequila Bar \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "discovered"
+      ]
+    },
+    {
+      "url": "/food_and_beverage/fork-fire-bowls/",
+      "type": "vendor",
+      "status": 200,
+      "title": "Fork & Fire Bowls \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "discovered"
+      ]
+    },
+    {
+      "url": "/food_and_beverage/zaria-pizzeria/",
+      "type": "vendor",
+      "status": 200,
+      "title": "Zaria Pizzeria \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "discovered"
+      ]
+    },
+    {
+      "url": "/gift-cards/",
+      "type": "gift-cards",
+      "status": 200,
+      "title": "Gift Cards \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap"
+      ]
+    },
+    {
+      "url": "/golf-simulator/",
+      "type": "golf-simulator",
+      "status": 200,
+      "title": "Golf Simulator \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap",
+        "crawl"
+      ]
+    },
+    {
+      "url": "/menu/",
+      "type": "menu",
+      "status": 200,
+      "title": "Our Menu \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap"
+      ]
+    },
+    {
+      "url": "/news/",
+      "type": "news",
+      "status": 200,
+      "title": "News \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap",
+        "crawl"
+      ]
+    },
+    {
+      "url": "/party/",
+      "type": "party",
+      "status": 200,
+      "title": "Party \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap"
+      ]
+    },
+    {
+      "url": "/private-parties/",
+      "type": "private-parties",
+      "status": 200,
+      "title": "Private parties \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap",
+        "crawl"
+      ]
+    },
+    {
+      "url": "/reserve/",
+      "type": "reserve",
+      "status": 200,
+      "title": "Reservations \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap"
+      ]
+    },
+    {
+      "url": "/sand-sports/",
+      "type": "sand-sports",
+      "status": 200,
+      "title": "Sand Sports \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap",
+        "crawl"
+      ]
+    },
+    {
+      "url": "/specials/",
+      "type": "specials",
+      "status": 200,
+      "title": "Specials \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap"
+      ]
+    },
+    {
+      "url": "/vendor/bristols/",
+      "type": "vendor",
+      "status": 200,
+      "title": "Bristol\u2019s \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "discovered"
+      ]
+    },
+    {
+      "url": "/vendor/collective-pour/",
+      "type": "vendor",
+      "status": 200,
+      "title": "Collective Pour \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "discovered"
+      ]
+    },
+    {
+      "url": "/vendor/main-bar/",
+      "type": "vendor",
+      "status": 200,
+      "title": "Main Bar \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "discovered"
+      ]
+    },
+    {
+      "url": "/vendor/mezzanine-bar/",
+      "type": "vendor",
+      "status": 200,
+      "title": "Mezzanine Bar \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "discovered"
+      ]
+    },
+    {
+      "url": "/vendor/ms-lei-leis/",
+      "type": "vendor",
+      "status": 200,
+      "title": "Ms. Lei Lei\u2019s \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "discovered"
+      ]
+    },
+    {
+      "url": "/vendor/roberto-and-miguels/",
+      "type": "vendor",
+      "status": 200,
+      "title": "Roberto and Miguel\u2019s \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "discovered"
+      ]
+    },
+    {
+      "url": "/vendor/the-district/",
+      "type": "vendor",
+      "status": 200,
+      "title": "The District \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "discovered"
+      ]
+    },
+    {
+      "url": "/volleyball-leagues/",
+      "type": "volleyball-leagues",
+      "status": 200,
+      "title": "Volleyball leagues \u2013 Westfield Collective",
+      "description": "",
+      "source": [
+        "sitemap"
+      ]
+    }
+  ],
+  "assets": {
+    "images": [
+      "https://static.spotapps.co/website_images/default_template_images/spothopper_logo.png",
+      "https://static01.sh-websites.com/uploads/sites/208/2025/01/IMG_1444-1024x669.jpg",
+      "https://static01.sh-websites.com/uploads/sites/208/2025/03/Enscape_2024-12-04-19-00-09-1024x576.png",
+      "https://static01.sh-websites.com/uploads/sites/208/2025/03/drinks-scaled-1-1024x683.jpg",
+      "https://static01.sh-websites.com/uploads/sites/208/2025/03/mezz-drinks-1024x683.jpg",
+      "https://static01.sh-websites.com/uploads/sites/208/2025/10/9-tacos-layout-819x1024.png",
+      "https://static01.sh-websites.com/uploads/sites/208/2025/12/Pulled-Pork-Sandwich-1024x683.jpg",
+      "https://static01.sh-websites.com/uploads/sites/208/2025/12/about_03.jpg",
+      "https://static01.sh-websites.com/uploads/sites/208/2025/12/igloo--819x1024.png",
+      "https://static01.sh-websites.com/uploads/sites/208/2025/12/welcome_back-1024x576.jpg",
+      "https://static01.sh-websites.com/uploads/sites/208/2025/12/welcome_back.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2024/07/logo-e1771239171701.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/01/IMG_1444-1024x669.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/01/IMG_1444-300x196.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/01/IMG_1444-768x501.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/01/IMG_1444.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/01/Screenshot-2025-12-18-at-15.24.43-295x300.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/01/Screenshot-2025-12-18-at-15.24.43.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/01/Screenshot-2025-12-18-at-15.29.48-150x150.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/01/Screenshot-2025-12-18-at-15.29.48-300x300.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/01/Screenshot-2025-12-18-at-15.29.48-400x400.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/01/Screenshot-2025-12-18-at-15.29.48.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/01/Screenshot-2025-12-18-at-15.34.27-297x300.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/01/Screenshot-2025-12-18-at-15.34.27.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/01/Screenshot-2025-12-18-at-15.58.50-292x300.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/01/Screenshot-2025-12-18-at-15.58.50.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Enscape_2024-12-04-19-00-09-1024x576.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Enscape_2024-12-04-19-00-09-1536x864.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Enscape_2024-12-04-19-00-09-300x169.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Enscape_2024-12-04-19-00-09-768x432.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Enscape_2024-12-04-19-00-09.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Ice-Cream-150x150.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Ice-Cream-300x300.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Ice-Cream-400x400.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Ice-Cream-768x768.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Ice-Cream-800x800.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Ice-Cream.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Screenshot-2025-12-18-at-15.18.25-150x150.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Screenshot-2025-12-18-at-15.18.25-300x300.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Screenshot-2025-12-18-at-15.18.25-400x400.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Screenshot-2025-12-18-at-15.18.25.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Screenshot-2025-12-18-at-15.20.00-295x300.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Screenshot-2025-12-18-at-15.20.00.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Screenshot-2025-12-18-at-15.21.49-297x300.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/Screenshot-2025-12-18-at-15.21.49.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/drinks-scaled-1-1024x683.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/drinks-scaled-1-1536x1024.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/drinks-scaled-1-2048x1366.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/drinks-scaled-1-300x200.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/drinks-scaled-1-768x512.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/mezz-drinks-1024x683.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/mezz-drinks-300x200.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/mezz-drinks-768x512.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/03/mezz-drinks.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/10/9-tacos-layout-240x300.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/10/9-tacos-layout-768x960.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/10/9-tacos-layout-819x1024.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/10/9-tacos-layout.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/Pulled-Pork-Sandwich-1024x683.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/Pulled-Pork-Sandwich-300x200.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/Pulled-Pork-Sandwich-768x512.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/Pulled-Pork-Sandwich.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/cropped-favicon-150x150.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/cropped-favicon-300x300.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/gallery_back.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/igloo--240x300.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/igloo--768x960.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/igloo--819x1024.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/igloo-.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/reviews.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/welcome_back-1024x576.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/welcome_back-1536x864.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/welcome_back-300x169.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/welcome_back-768x432.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2025/12/welcome_back.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/549031902-c6b10440-9151-45da-a234-0642a470c5a5.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/about-1024x576.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/about-300x169.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/about-768x432.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/about.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/fork_cover-150x150.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/fork_cover-300x300.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/fork_cover-400x400.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/fork_cover.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/fork_fire_bowls_cover-1024x576.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/fork_fire_bowls_cover-1536x864.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/fork_fire_bowls_cover-300x169.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/fork_fire_bowls_cover-768x432.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/fork_fire_bowls_cover.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/zara_pizzeria_cover-1024x995.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/zara_pizzeria_cover-300x292.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/zara_pizzeria_cover-768x747.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/zara_pizzeria_cover.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/zaria_cover-150x150.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/zaria_cover-300x300.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/zaria_cover-400x400.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/02/zaria_cover.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/burbon_and_tequila_bar_cover-150x150.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/burbon_and_tequila_bar_cover-300x300.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/burbon_and_tequila_bar_cover-400x400.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/burbon_and_tequila_bar_cover.webp",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image1-1024x576.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image1-1536x864.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image1-300x169.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image1-768x432.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image1.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image10-1024x576.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image10-1536x864.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image10-300x169.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image10-768x432.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image10.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image11-1024x576.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image11-1536x864.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image11-300x169.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image11-768x432.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image11.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image2-1024x576.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image2-1536x864.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image2-300x169.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image2-768x432.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image2.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image3-1024x576.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image3-1536x864.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image3-300x169.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image3-768x432.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image3.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image4-1024x576.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image4-1536x864.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image4-300x169.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image4-768x432.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image4.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image5-1024x576.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image5-1536x864.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image5-300x169.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image5-768x432.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image5.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image6-1024x576.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image6-1536x864.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image6-300x169.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image6-768x432.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image6.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image7-1024x576.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image7-1536x864.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image7-300x169.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image7-768x432.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image7.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image8-1024x576.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image8-1536x864.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image8-300x169.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image8-768x432.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image8.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image9-1024x576.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image9-1536x864.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image9-300x169.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image9-768x432.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/image9.jpg",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/westfield_back-1024x576.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/westfield_back-1536x864.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/westfield_back-300x169.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/westfield_back-768x432.png",
+      "https://static01.sh-websites.com/uploads/sites/222/2026/03/westfield_back.png",
+      "https://www.liberty-collective.com/wp-content/uploads/sites/2/2023/11/beer12-scaled.jpg",
+      "https://www.liberty-collective.com/wp-content/uploads/sites/2/2023/11/beer3-scaled.jpg",
+      "https://www.liberty-collective.com/wp-content/uploads/sites/2/2023/12/food18-scaled.jpg",
+      "https://www.liberty-collective.com/wp-content/uploads/sites/2/2023/12/food24-scaled.jpg",
+      "https://www.liberty-collective.com/wp-content/uploads/sites/2/2023/12/guinness-scaled.jpg"
+    ],
+    "videos": [],
+    "fonts": [
+      "https://static01.sh-websites.com/uploads/sites/222/fonts/1Ptgg87LROyAm0Kx8i4gS7lu.woff2",
+      "https://static01.sh-websites.com/uploads/sites/222/fonts/RWmMoKWR9v4ksMfaWd_JN-XHg6UKDXlq.woff2",
+      "https://static01.sh-websites.com/uploads/sites/222/fonts/Xmz-HUzqDCFdgfMsYiV_F7wfS-Bs_chQF5bwkEU4HTy.woff2"
+    ]
+  },
+  "external_links": [
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo",
+      "text": "Order Online"
+    },
+    {
+      "url": "https://order.toasttab.com/egiftcards/westfield-collective-indianapolis-750-e-181st-st-ste-6",
+      "text": "Gift cards"
+    },
+    {
+      "url": "https://static.spotapps.co/spots/73/2849e1138a4bca87a24eb8da8bdb53/full",
+      "text": ""
+    },
+    {
+      "url": "https://static.spotapps.co/spots/d0/0874ed46d044e88fa54278324d7b19/full",
+      "text": ""
+    },
+    {
+      "url": "https://static.spotapps.co/spots/4f/580709c6c24c7ea6c9bcf5e70738b4/full",
+      "text": ""
+    },
+    {
+      "url": "https://static.spotapps.co/spots/30/399a6801ac401dbed29e6d7ceb072a/full",
+      "text": ""
+    },
+    {
+      "url": "https://www.tiktok.com/@westfieldcollective",
+      "text": "TikTok"
+    },
+    {
+      "url": "https://www.spothopperapp.com/",
+      "text": ""
+    },
+    {
+      "url": "https://www.spothopperapp.com/contact-us?contact_reason=demo",
+      "text": "Website design, Social Media marketing and Email marketing provided by SpotHopper."
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/about/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/about/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/about/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/about/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/about/be-an-insider/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/about/be-an-insider/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/about/be-an-insider/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/about/be-an-insider/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tables.toasttab.com/restaurants/7cb4d495-65ed-413c-9e5e-c0f161281a6e/reserve?partySize=2u0026dateTime=2025-11-29T12:00:00.000-05:00",
+      "text": "Book now"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/about/igloo-rentals/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/about/igloo-rentals/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/about/igloo-rentals/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/about/igloo-rentals/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/become-a-vendor/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/become-a-vendor/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/become-a-vendor/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/become-a-vendor/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/catering/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/catering/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/catering/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/catering/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/clubs/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/clubs/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/clubs/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/clubs/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/drinks/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/drinks/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/drinks/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/drinks/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/events/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/events/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/events/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/events/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/food-beverage/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/food-beverage/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/food-beverage/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/food-beverage/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/gift-cards/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/gift-cards/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/gift-cards/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/gift-cards/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/golf-simulator/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/golf-simulator/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/golf-simulator/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/golf-simulator/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/menu/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/menu/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/menu/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/menu/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/news/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/news/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/news/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/news/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/party/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/party/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/party/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/party/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/private-parties/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/private-parties/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/private-parties/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/private-parties/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/reserve/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/reserve/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/reserve/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/reserve/",
+      "text": "Order"
+    },
+    {
+      "url": "https://ibeach31.com/welcome",
+      "text": "www.ibeachvolleyball.com"
+    },
+    {
+      "url": "http://www.instagram.com/ibeachvolleyball",
+      "text": "@ibeachvolleyball"
+    },
+    {
+      "url": "https://ibeach31.com/welcome#",
+      "text": "iBeach Volleyball Training & Leagues"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/sand-sports/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/sand-sports/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/sand-sports/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/sand-sports/",
+      "text": "Order"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/specials/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/specials/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/specials/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/specials/",
+      "text": "Order"
+    },
+    {
+      "url": "https://app.facilityally.com/group/liberty-collective/",
+      "text": "Register Now"
+    },
+    {
+      "url": "https://app.facilityally.com/group/liberty-collective/#",
+      "text": "Register Now"
+    },
+    {
+      "url": "https://app.facilityally.com/waivers/view/77",
+      "text": "Liability Waiver"
+    },
+    {
+      "url": "https://tmt.spotapps.co/private-parties?spot_id=697290&callback_url=https://www.westfield-collective.com/volleyball-leagues/",
+      "text": "Parties"
+    },
+    {
+      "url": "https://tmt.spotapps.co/job-listings?spot_id=697290&callback_url=https://www.westfield-collective.com/volleyball-leagues/",
+      "text": "Jobs"
+    },
+    {
+      "url": "https://tmt.spotapps.co/catering?spot_id=697290&callback_url=https://www.westfield-collective.com/volleyball-leagues/",
+      "text": "Catering"
+    },
+    {
+      "url": "https://www.meandu.app/westfield-collective-mvo?callback_url=https://www.westfield-collective.com/volleyball-leagues/",
+      "text": "Order"
+    }
+  ]
+}
