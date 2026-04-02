@@ -121,6 +121,85 @@ wrangler pages deploy . --project-name SITE-NAME --branch main
 - Verify all pages load correctly
 - Verify no external CDN references remain
 
+### Step 10: Redirects
+Create `_redirects` file mapping all old SpotHopper URLs to new paths. Use Google Search Console to find all indexed pages on the old domain. Common patterns:
+```
+/menu          /food-beverage/  301
+/contact       /#contact        301
+/about-us      /about/          301
+```
+
+### Step 11: Accessibility
+Target: 100 Lighthouse accessibility. Non-negotiable checklist:
+- All images have descriptive `alt` text
+- Sufficient color contrast on all text
+- Keyboard navigable
+- Touch targets minimum 48x48px with adequate spacing
+- Heading elements in sequentially-descending order (no skipping h2 to h4)
+- `<video>` elements have `<track kind="captions">`
+
+### Step 12: Analytics & Search Console (at build time, not after)
+- GA4 measurement ID installed before launch
+- GSC verified under agency property on day one (DNS TXT record)
+- Document GA4 and GSC property IDs in repo CLAUDE.md
+
+### Step 13: GHL Integration
+Forms must POST to GHL, not just sit as HTML. Before launch:
+- [ ] GHL location stood up with data structured for API consumption
+- [ ] Hours entered in GHL and confirmed returning via API
+- [ ] Newsletter form wired to GHL (embed or API POST)
+- [ ] Contact form wired to GHL
+- [ ] Birthday/VIP capture wired to GHL
+- [ ] Confirm form submissions hitting GHL CRM before launch
+- [ ] Document GHL `locationId` and form IDs in CLAUDE.md
+
+**GHL is the data layer. The site is the display layer. Hours and events should come from GHL via Cloudflare Worker, not be hardcoded in HTML.**
+
+### Step 14: Reviews
+- Google Places API call configured (agency API key)
+- Filter: 4+ stars only
+- Display: 3-5 rotating reviews
+- Falls back gracefully if API unavailable
+
+## Intake Brief (must be completed before building)
+```
+Client Name:
+Domain (current registrar):
+GHL Account ID:
+GSC Property (agency account):
+GA4 Measurement ID:
+Google Place ID (for reviews):
+Primary Brand Color (hex):
+Secondary Brand Color (hex):
+Logo file (WebP):
+Phone:
+Address:
+Hours (all day parts):
+Cuisine / Venue Type:
+Social Links:
+Ordering URLs:
+GHL Form Embed ID (newsletter):
+GHL Form Embed ID (contact):
+GHL Form Embed ID (birthday/VIP):
+Schema Type (Restaurant / FoodEstablishment / EntertainmentBusiness):
+```
+**If the intake brief isn't filled out, don't start building.**
+
+## Infrastructure
+- **Cloudflare Account**: `chuckp@livewiremediapartners.com` — super admin, never delegate
+- **GitHub Org**: ChowdownMedia — one repo per client
+- **Hosting**: Cloudflare Pages (free tier)
+- **Dynamic Logic**: Cloudflare Workers ($5/month flat)
+- **Domains**: Leave at current registrar, point DNS to Cloudflare — no transfer required
+- **Credentials**: Proton Pass under Chowdown vault — never in repo files
+
+## Developer Access Model
+- Developers get access to specific GitHub repos only
+- Push to feature branch — Chuck reviews and merges to `main`
+- `main` auto-deploys to Cloudflare Pages
+- Developers NEVER receive Cloudflare credentials
+- All API keys and GHL credentials in Proton Pass — never in repo files
+
 ## DNS Migration
 See DNS-MIGRATION.md for zero-downtime procedure. Always capture MX/TXT/CNAME records BEFORE switching nameservers.
 
