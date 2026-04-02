@@ -61,14 +61,18 @@
     }
   </style>
 
-  <!-- Font Awesome 4.7 — exact same as live site for icons -->
-  <link rel="stylesheet" href="/assets/css/icons.css">
-
-  <!-- Leaflet CSS for map -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" media="print" onload="this.media='all'">
+  <!-- Preload LCP image -->
+  <link rel="preload" as="image" href="/assets/images/home/welcome_back.webp" fetchpriority="high">
+  <!-- Preload fonts -->
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/1Ptgg87LROyAm0Kx8i4gS7lu.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Xmz-HUzqDCFdgfMsYiV_F7wfS-Bs_chQF5bwkEU4HTy.woff2" crossorigin>
 
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <link rel="stylesheet" href="/assets/css/icons.css">
+
+  <!-- Leaflet CSS for map (non-blocking) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" media="print" onload="this.media='all'">
 
   <!-- Structured Data: Primary Business -->
   <script type="application/ld+json">
